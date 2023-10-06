@@ -77,5 +77,5 @@ fun sine(cv, reset) {
 
 fun process(cv1, cv2, rst, drv) {
    
-   return fold((sine(cv1, rst) + sine(cv2, rst) / 2.0), drv);
+   return fold((sine(cv1, rst) + sine(cv2, rst)) / 2.0, drv);
 }

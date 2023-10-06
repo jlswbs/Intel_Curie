@@ -41,7 +41,6 @@ void setup(){
  
 }
 
-
 void sample(){
 
   int16_t sample = 24576.0f * Addfold_process(addfold, cv1, cv2, rst, fold);
@@ -58,7 +57,6 @@ void sample(){
   CurieTimerOne.restart(time);
   
 }
-
 
 void loop(){
 

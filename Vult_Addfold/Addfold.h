@@ -168,7 +168,7 @@ static_inline void Addfold_process_init(Addfold__ctx_type_18 &_output_){
 }
 
 static_inline float Addfold_process(Addfold__ctx_type_18 &_ctx, float cv1, float cv2, float rst, float drv){
-   return Addfold_fold((Addfold_sine(_ctx._inst1b3,cv1,rst) + (0.5f * Addfold_sine(_ctx._inst2b3,cv2,rst))),drv);
+   return Addfold_fold((0.5f * (Addfold_sine(_ctx._inst1b3,cv1,rst) + Addfold_sine(_ctx._inst2b3,cv2,rst))),drv);
 };
 
 
